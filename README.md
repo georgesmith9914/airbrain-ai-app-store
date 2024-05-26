@@ -2,11 +2,20 @@ apache Setup:
   sudo nano /etc/apache2/sites-available/airbrain.co.conf  
 
   Make entry: 
-  <VirtualHost apps.airbrain.co:443>
-      ServerName apps.airbrain.co
-      # with optional timeout settings
-      ProxyPass / https://localhost/ connectiontimeout=5 timeout=30
-  </VirtualHost>
+<VirtualHost *:80>
+    ServerName wireframer.airbrain.co
+    ProxyPreserveHost On
+    # with optional timeout settings
+    ProxyPass / http://localhost:5173/
+    ProxyPassReverse / http://localhost:5173/
+</VirtualHost>
+<VirtualHost *:443>
+    ServerName apps.airbrain.co
+    ProxyPreserveHost On
+    # with optional timeout settings
+    ProxyPass / https://localhost/
+    ProxyPassReverse / https://localhost/
+</VirtualHost>
 
   sudo a2ensite airbrain.co.conf  
   sudo a2dissite 000-default.conf  

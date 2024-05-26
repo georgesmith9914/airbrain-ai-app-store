@@ -296,6 +296,12 @@ const appsList = [
     imageUrl: 'https://airbrain.co/img/logo512.png',
     category: 'ASSISTANTS',
   },
+  {
+    appId: 41,
+    appName: 'Wireframer ',
+    imageUrl: 'https://airbrain.co/img/logo512.png',
+    category: 'WIREFRAMING'
+  },
 ]
 
 // Write your code here
