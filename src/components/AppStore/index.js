@@ -4,8 +4,9 @@ import TabItem from '../TabItem'
 import AppItem from '../AppItem'
 
 const tabsList = [
-  {tabId: 'SOCIAL', displayText: 'Social'},
-  {tabId: 'GAMES', displayText: 'Games'},
+  {tabId: 'ASSISTANTS', displayText: 'AI Assistants'},
+  {tabId: 'SEO', displayText: 'SEO'},
+  {tabId: 'WIREFRAMING', displayText: 'Wireframing'},
   {tabId: 'NEWS', displayText: 'News'},
   {tabId: 'FOOD', displayText: 'Food'},
 ]
@@ -13,17 +14,16 @@ const tabsList = [
 const appsList = [
   {
     appId: 0,
-    appName: 'Facebook',
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/app-store/social-facebook.png',
-    category: 'SOCIAL',
+    appName: 'AirBrain AI Assistants',
+    imageUrl: 'https://airbrain.co/img/logo512.png',
+    category: 'ASSISTANTS',
   },
   {
     appId: 1,
     appName: 'Messenger',
     imageUrl:
       'https://assets.ccbp.in/frontend/react-js/app-store/social-messenger.png',
-    category: 'SOCIAL',
+    category: 'SEO',
   },
   {
     appId: 2,
@@ -290,6 +290,12 @@ const appsList = [
     imageUrl: 'https://assets.ccbp.in/frontend/react-js/app-store/food-dot.png',
     category: 'FOOD',
   },
+  {
+    appId: 40,
+    appName: 'AirBrain AI Assistants Buidler ',
+    imageUrl: 'https://airbrain.co/img/logo512.png',
+    category: 'ASSISTANTS',
+  },
 ]
 
 // Write your code here
@@ -329,7 +335,7 @@ class AppStore extends Component {
 
     return (
       <div className="bg-container">
-        <h1 className="heading">AI Apps</h1>
+        <h1 className="heading">AirBrain AI Apps</h1>
         <div className="search-container">
           <input
             type="search"

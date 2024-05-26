@@ -1,4 +1,25 @@
-HTTPS=true SSL_CRT_FILE=./localhost_cert/cert.pem SSL_KEY_FILE=./localhost_cert/key.pem NODE_OPTIONS=--openssl-legacy-provider  npm start
+apache Setup:
+  sudo nano /etc/apache2/sites-available/airbrain.co.conf  
+
+  Make entry: 
+  <VirtualHost apps.airbrain.co:443>
+      ServerName apps.airbrain.co
+      # with optional timeout settings
+      ProxyPass / https://localhost/ connectiontimeout=5 timeout=30
+  </VirtualHost>
+
+  sudo a2ensite airbrain.co.conf  
+  sudo a2dissite 000-default.conf  
+  sudo apache2ctl configtest
+  sudo systemctl restart apache2  
+
+Node JS Run:
+  HTTPS=true PORT=443 SSL_CRT_FILE=./certs/fullchain.pem SSL_KEY_FILE=./certs/privkey.pem NODE_OPTIONS=--openssl-legacy-provider  npm start
+
+  HTTPS=true PORT=443 SSL_CRT_FILE=./localhost_cert/cert.pem SSL_KEY_FILE=./localhost_cert/key.pem NODE_OPTIONS=--openssl-legacy-provider  npm start
+
+To run on lower port 443, use the below command:  
+sudo sysctl net.ipv4.ip_unprivileged_port_start=443  
 
 
 In this project, let's build an **App Store** by applying the concepts we have learned till now.
