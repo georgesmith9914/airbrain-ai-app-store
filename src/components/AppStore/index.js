@@ -309,6 +309,12 @@ const appsList = [
     imageUrl: 'https://airbrain.co/img/logo512.png',
     category: 'MYAPPS',
   },
+  {
+    appId: 0,
+    appName: 'Chat with Your Documents',
+    imageUrl: 'https://airbrain.co/img/logo512.png',
+    category: 'ASSISTANTS',
+  },
 ]
 
 // Write your code here

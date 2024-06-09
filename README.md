@@ -1,9 +1,13 @@
 Steps to run it on apache on ubuntu:  
+
+run ./deploy.sh 
+
+or the following steps  
+
 1. NODE_OPTIONS=--openssl-legacy-provider npm run build  
 2. cd build  
 3. mkdir /var/www/airbrain-website/public/appstore  
 4. cp -a . /var/www/airbrain-website/public/appstore
-
 
 
 
