@@ -4,6 +4,7 @@ import TabItem from '../TabItem'
 import AppItem from '../AppItem'
 
 const tabsList = [
+  {tabId: 'MYAPPS', displayText: 'My Apps'},
   {tabId: 'ASSISTANTS', displayText: 'AI Assistants'},
   {tabId: 'SEO', displayText: 'SEO'},
   {tabId: 'WIREFRAMING', displayText: 'Wireframing'},
@@ -302,6 +303,12 @@ const appsList = [
     imageUrl: 'https://airbrain.co/img/logo512.png',
     category: 'WIREFRAMING'
   },
+  {
+    appId: 44,
+    appName: 'AirBrain AI Assistants',
+    imageUrl: 'https://airbrain.co/img/logo512.png',
+    category: 'MYAPPS',
+  },
 ]
 
 // Write your code here
@@ -338,10 +345,11 @@ class AppStore extends Component {
     const {activeTabId, searchInput} = this.state
     const filteredAppsList = this.getFilteredApps()
     const searchedAppsList = this.getSearchResults()
+    const signinupHTML = `/appstore/signinup.html`;
 
     return (
       <div className="bg-container">
-        <h1 className="heading">AirBrain AI Apps</h1>
+        <div><h1 className="heading">AirBrain AI Apps</h1><a href={signinupHTML}>Log in</a>&nbsp;&nbsp;&nbsp;<a href={signinupHTML}>Sign up</a></div>
         <div className="search-container">
           <input
             type="search"
