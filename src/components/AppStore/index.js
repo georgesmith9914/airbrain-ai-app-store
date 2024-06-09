@@ -349,7 +349,7 @@ class AppStore extends Component {
 
     return (
       <div className="bg-container">
-        <div><h1 className="heading">AirBrain AI Apps</h1><a href={signinupHTML}>Log in</a>&nbsp;&nbsp;&nbsp;<a href={signinupHTML}>Sign up</a></div>
+        <div><h1 className="heading">AirBrain AI Apps New</h1><a href={signinupHTML}>Log in</a>&nbsp;&nbsp;&nbsp;<a href={signinupHTML}>Sign up</a></div>
         <div className="search-container">
           <input
             type="search"

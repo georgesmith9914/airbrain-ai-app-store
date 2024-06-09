@@ -1,3 +1,13 @@
+Steps to run it on apache on ubuntu:  
+1. NODE_OPTIONS=--openssl-legacy-provider npm run build  
+2. cd build  
+3. mkdir /var/www/airbrain-website/public/appstore  
+4. cp -a . /var/www/airbrain-website/public/appstore
+
+
+
+
+
 IMPORTANT to Start Node JS on prod!
   HTTPS=true PORT=443 SSL_CRT_FILE=./certs/fullchain.pem SSL_KEY_FILE=./certs/privkey.pem NODE_OPTIONS=--openssl-legacy-provider  npm start  
   HTTPS=true PORT=443 SSL_CRT_FILE=./certs/fullchain.pem SSL_KEY_FILE=./certs/privkey.pem NODE_OPTIONS=--openssl-legacy-provider nohup  npm start &
