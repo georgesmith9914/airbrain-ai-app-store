@@ -7,8 +7,8 @@
         "5": "http://localhost:3700"
     },
     "PROD": {
-         "1": "/builder/server/app/",
-         "2": "/assistants/assistants.html",
+         "1": "/assistants/assistants.html",
+         "2": "/builder/server/app/",
          "3": "http://dev.example.com/app3",
          "4": "http://dev.example.com/app3",
          "5": "http://dev.example.com/app3"
