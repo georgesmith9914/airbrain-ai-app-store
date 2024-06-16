@@ -18,7 +18,6 @@ function getAppURL(localAppId) {
   }else{
     env = "PROD"
   }
-  console.log(env)
   const envSpecificAppURLs = appURLs[env];
   console.log(process.env.REACT_APP_ENVIRONMENT);
   console.log("envSpecificAppURLs:", envSpecificAppURLs);
