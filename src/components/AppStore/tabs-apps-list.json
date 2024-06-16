@@ -3,7 +3,8 @@
         {"tabId": "MYAPPS", "displayText": "My Apps"},
         {"tabId": "ASSISTANTS", "displayText": "AI Assistants"},
         {"tabId": "SEO", "displayText": "SEO"},
-        {"tabId": "WIREFRAMING", "displayText": "Wireframing"}
+        {"tabId": "WIREFRAMING", "displayText": "Wireframing"},
+        {"tabId": "WHITEBOARDING", "displayText": "Whiteboarding"}
       ],
    "apps": [
         {
@@ -41,6 +42,12 @@
         "appName": "Chat with Your Documents",
         "imageUrl": "https://airbrain.co/img/logo512.png",
         "category": "ASSISTANTS"
+        },
+        {
+        "appId": 6,
+        "appName": "Whiteboarder",
+        "imageUrl": "https://airbrain.co/img/logo512.png",
+        "category": "WHITEBOARDING"
         }
     ] 
 }

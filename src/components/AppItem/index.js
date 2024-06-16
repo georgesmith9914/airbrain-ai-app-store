@@ -11,7 +11,16 @@ const AppItem = props => {
   
 function getAppURL(localAppId) {
   console.log("LocalappId:", localAppId.appId, process.env.REACT_APP_ENVIRONMENT);
-  const envSpecificAppURLs = appURLs[process.env.REACT_APP_ENVIRONMENT];
+  console.log("appURLs:", appURLs);
+  let env = "";
+  if(process.env.REACT_APP_ENVIRONMENT === "DEV") {
+    env = "DEV"
+  }else{
+    env = "PROD"
+  }
+  console.log(env)
+  const envSpecificAppURLs = appURLs[env];
+  console.log(process.env.REACT_APP_ENVIRONMENT);
   console.log("envSpecificAppURLs:", envSpecificAppURLs);
   return envSpecificAppURLs[localAppId.appId]
 }
