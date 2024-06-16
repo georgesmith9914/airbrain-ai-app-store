@@ -1,0 +1,46 @@
+{
+    "tabs": [
+        {"tabId": "MYAPPS", "displayText": "My Apps"},
+        {"tabId": "ASSISTANTS", "displayText": "AI Assistants"},
+        {"tabId": "SEO", "displayText": "SEO"},
+        {"tabId": "WIREFRAMING", "displayText": "Wireframing"}
+      ],
+   "apps": [
+        {
+        "appId": 1,
+        "appName": "AI Assistants",
+        "imageUrl": "https://airbrain.co/img/logo512.png",
+        "category": "ASSISTANTS"
+        },
+        {
+        "appId": 4,
+        "appName": "Discover Keyword Ideas",
+        "imageUrl": "https://assets.ccbp.in/frontend/react-js/app-store/social-messengers.png",
+        "category": "SEO"
+        },
+        {
+        "appId": 2,
+        "appName": "AI Assistants Builder",
+        "imageUrl": "https://airbrain.co/img/logo512.png",
+        "category": "ASSISTANTS"
+        },
+        {
+        "appId": 5,
+        "appName": "Wireframer",
+        "imageUrl": "https://airbrain.co/img/logo512.png",
+        "category": "WIREFRAMING"
+        },
+        {
+        "appId": 1,
+        "appName": "AI Assistants",
+        "imageUrl": "https://airbrain.co/img/logo512.png",
+        "category": "MYAPPS"
+        },
+        {
+        "appId": 3,
+        "appName": "Chat with Your Documents",
+        "imageUrl": "https://airbrain.co/img/logo512.png",
+        "category": "ASSISTANTS"
+        }
+    ] 
+}

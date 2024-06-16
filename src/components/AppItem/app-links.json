@@ -1,0 +1,16 @@
+{
+    "DEV": {
+        "1": "http://localhost:3100/assistants.html",
+        "2": "http://localhost:3200/builder",
+        "3": "",
+        "4": "http://localhost:3500",
+        "5": "http://localhost:3700"
+    },
+    "PROD": {
+         "1": "/builder/server/app/",
+         "2": "/assistants/assistants.html",
+         "3": "http://dev.example.com/app3",
+         "4": "http://dev.example.com/app3",
+         "5": "http://dev.example.com/app3"
+    }
+}

@@ -1,15 +1,33 @@
 Steps to run it on apache on ubuntu:  
 
+git pull  
 run ./deploy.sh 
 
 or the following steps  
 
-1. NODE_OPTIONS=--openssl-legacy-provider npm run build  
+1. NODE_OPTIONS=--openssl-legacy-provider REACT_APP_ENVIRONMENT=PROD npm run build  
 2. cd build  
 3. mkdir /var/www/airbrain-website/public/appstore  
 4. cp -a . /var/www/airbrain-website/public/appstore
 
+Local Dev:  
+NODE_OPTIONS=--openssl-legacy-provider REACT_APP_ENVIRONMENT=DEV npm run start  
+NODE_OPTIONS=--openssl-legacy-provider REACT_APP_ENVIRONMENT=DEV npm run build    
 
+
+Ports for each app for local development for AirBrain AI:  
+1) App Store: 3000  
+2) Assistants: 3100   
+3) Builder:  
+  NextJS Frontend: 3200   
+  Chat UI Frontend: 3300   
+  Python Backend: 3400   
+4) Keyword Insights:   
+   React JS frontend: 3500  
+   Python backend: 3600  
+5) Wireframe: 3700  
+6) Chat with Your Documents:  
+7) Chat with Your Data:    
 
 
 IMPORTANT to Start Node JS on prod!
