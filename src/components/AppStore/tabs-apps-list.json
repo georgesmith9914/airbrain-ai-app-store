@@ -4,7 +4,8 @@
         {"tabId": "ASSISTANTS", "displayText": "AI Assistants"},
         {"tabId": "SEO", "displayText": "SEO"},
         {"tabId": "WIREFRAMING", "displayText": "Wireframing"},
-        {"tabId": "WHITEBOARDING", "displayText": "Whiteboarding"}
+        {"tabId": "WHITEBOARDING", "displayText": "Whiteboarding"},
+        {"tabId": "DISTRIBUTEDCOMPUTING", "displayText": "Distributed Computing"}
       ],
    "apps": [
         {
@@ -48,6 +49,12 @@
         "appName": "Whiteboarder",
         "imageUrl": "https://airbrain.co/img/logo512.png",
         "category": "WHITEBOARDING"
+        },
+        {
+        "appId": 7,
+        "appName": "Distributed Computing",
+        "imageUrl": "https://airbrain.co/img/logo512.png",
+        "category": "DISTRIBUTEDCOMPUTING"
         }
     ] 
 }
